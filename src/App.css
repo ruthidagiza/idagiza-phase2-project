@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+:root {
+  --maincolor: wheat;
+  --accentcolor: purple;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
   align-items: center;
+  background-color: var(--maincolor);
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.brand {
+  line-height: 2px;
+  font-size: 30;
+  color: var(--accentcolor);
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 30px;
+}
+.nav-link {
+  margin-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}
+.nav-link:hover {
+  color: var(--accentcolor);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  justify-self: end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--maincolor);
+  color: var(--accentcolor);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.data-row {
+  display: flex;
+  padding: 1px;
+  align-items: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-bottom: 1px solid #d1d5db;
+  width: 97%;
+  /* line-height: "1pxz"; */
+  cursor: pointer;
+}
+.data-row:hover {
+  background-color: #d1d5db;
 }
